@@ -32,7 +32,7 @@ export class ViewStayComponent implements OnInit {
   }
   facilities=[];
 
-  airports = ['Calicut','Cochin','Kannur','Kasargod','Kollam','Kottayam','Thiruvananthapuram'];
+  airports = ['Calicut','Cochin','Kannur','Thiruvananthapuram'];
 
   constructor(private _book:BookingService,private _router:Router) { }
 
