@@ -99,8 +99,14 @@
     </form>
    </div>
     <!-- Result 1 -->  
+    <div class="alert alert-info text-center" role="alert" *ngIf="stays.length<=0">
+      NO RESULTS FOUND!
+    </div>
     <!-- |filter:'filterBy':'type'|sort:['sortBy','orderBy'] -->
-    <div class="card" *ngFor="let stay of stays|filter:filterBy:'type'|sort:[sortBy,orderBy] ">
+    <div class="card" *ngFor="let stay of stays|filter:filterBy:'type'|sort:[sortBy,orderBy]|paginate: { itemsPerPage: 10, currentPage: p }">
+      <div class="alert alert-info" role="alert" *ngIf="!stays || stays.length<=0">
+        NO RESULTS FOUND!
+      </div>
         <div class="card-body shadow">
           <div class="row">
               <div class="left col-lg-3">
@@ -125,6 +131,7 @@
           </div>
         </div>
       </div>
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
     <!-- /Result 1 -->
    
 </div>

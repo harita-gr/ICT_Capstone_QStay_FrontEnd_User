@@ -74,6 +74,9 @@ export class PaymentComponent implements OnInit {
     var saveOrder = new OrderSave(
       localStorage.getItem('userId'),
       localStorage.getItem('viewStayId'),
+      this.orderDetails.from,
+      this.orderDetails.dateCheckin,
+      this.orderDetails.fullName,
       this.stay.hotelName,
       this.orderDetails.airport,
       this.stay.address,

@@ -2,6 +2,9 @@ export class OrderSave {
     constructor(
         public userId:string,
         public stayId:string,
+        public from:string,
+        public dateCheckIn:string,
+        public fullName:string,
         public hotelName:string,
         public district:string,
         public address:string,

@@ -14,8 +14,8 @@ export class BookingService {
   constructor(private _http: HttpClient,
     private _router:Router) { }
 
-  // _url='http://localhost:3000/';
-  _url='https://qstay-backend.herokuapp.com/';
+   _url='http://localhost:3000/';
+  //_url='https://qstay-backend.herokuapp.com/';
 
   searchStay(searchCriteria:any){
     console.log('search options',searchCriteria)

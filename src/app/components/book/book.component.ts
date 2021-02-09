@@ -36,6 +36,7 @@ export class BookComponent implements OnInit {
   // filters:string[]= ['Hotel','Homestay','Resort'];
 
   stays:Stay[]=[];
+  p: number = 1;
 
   constructor(private _book:BookingService,private _router:Router) { }
   
