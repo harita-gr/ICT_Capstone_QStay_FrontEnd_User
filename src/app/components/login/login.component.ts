@@ -46,7 +46,7 @@ export class LoginComponent implements OnInit {
                   this.errorMsg="Invalid Credentials"
                    break;
                 default:
-                  this.errorMsg="Uknown Server-side Error"
+                  this.errorMsg="Unknown Server-side Error"
           }
 
           }

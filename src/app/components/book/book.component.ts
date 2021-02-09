@@ -13,7 +13,7 @@ import { NgForm } from '@angular/forms';
 })
 export class BookComponent implements OnInit {
 
-  airports = ['Calicut','Cochin','Kannur','Kasargod','Kollam','Kottayam','Thiruvananthapuram'];
+  airports = ['Calicut','Cochin','Kannur','Thiruvananthapuram'];
   isSearch=false;
 
   search:Search = {
